@@ -16,6 +16,144 @@
 ![image](https://github.com/ugunNet21/Laravel-e-learning-mazer/assets/45864165/44b3959d-93d0-49e0-b1f8-51219376497d)
 
 
+## Skema Tabel dan Relasi
+
+```bash
+Tabel:
+
+Siswa:
+
+ID siswa (Primary Key)
+Nama siswa
+Jenis kelamin
+Tanggal lahir
+Alamat
+Jenjang (SMP/SMA)
+
+Mata Pelajaran:
+
+ID mata pelajaran (Primary Key)
+Nama mata pelajaran
+Deskripsi
+
+Guru:
+
+ID guru (Primary Key)
+Nama guru
+Mata pelajaran yang diajarkan
+Jenjang (SMP/SMA)
+
+Nilai:
+
+ID nilai (Primary Key)
+ID siswa (Foreign Key)
+ID mata pelajaran (Foreign Key)
+Nilai Ulangan Harian
+Nilai Ujian Tengah Semester
+Nilai Ujian Akhir Semester
+Sumber Nilai (e-learning/manual)
+Jenjang (SMP/SMA)
+
+Raport:
+
+ID raport (Primary Key)
+ID siswa (Foreign Key)
+Semester
+Tahun ajaran
+Rata-rata nilai
+Keterangan (naik kelas, tidak naik kelas, dll.)
+Jenjang (SMP/SMA)
+
+E-Learning:
+
+ID materi (Primary Key)
+ID guru (Foreign Key)
+ID mata pelajaran (Foreign Key)
+Judul materi
+Deskripsi materi
+Tautan materi
+Jenjang (SMP/SMA)
+
+Soal:
+
+ID soal (Primary Key)
+ID guru (Foreign Key)
+ID mata pelajaran (Foreign Key)
+Jenis Soal (essay/pilihan ganda)
+Pertanyaan
+Jenjang (SMP/SMA)
+
+Jawaban:
+
+ID jawaban (Primary Key)
+ID soal (Foreign Key)
+Opsi jawaban
+Jenjang (SMP/SMA)
+
+Kelas:
+
+ID kelas (Primary Key)
+Nama kelas
+Tingkat
+Jenjang (SMP/SMA)
+
+Jurusan:
+
+ID jurusan (Primary Key)
+Nama jurusan
+Jenjang (SMA)
+
+Absensi Siswa:
+
+ID absensi siswa (Primary Key)
+ID siswa (Foreign Key)
+Tanggal
+Kehadiran (hadir/tidak hadir/izin)
+Jenjang (SMP/SMA)
+
+Absensi Guru:
+
+ID absensi guru (Primary Key)
+ID guru (Foreign Key)
+Tanggal
+Kehadiran (hadir/tidak hadir/izin)
+Jenjang (SMP/SMA)
+
+Relasi:
+Setiap Siswa memiliki banyak Nilai (one-to-many dengan Siswa sebagai entitas utama).
+Setiap Mata Pelajaran memiliki banyak Nilai (one-to-many dengan Mata Pelajaran sebagai entitas utama).
+Setiap Siswa memiliki satu Raport untuk setiap Semester (one-to-many dengan Siswa sebagai entitas utama).
+Setiap Raport berhubungan dengan banyak Nilai (one-to-many dengan Raport sebagai entitas utama).
+Setiap Guru dapat membuat banyak E-Learning (one-to-many dengan Guru sebagai entitas utama).
+Setiap Mata Pelajaran memiliki banyak E-Learning (one-to-many dengan Mata Pelajaran sebagai entitas utama).
+Setiap Guru dapat membuat banyak Soal (one-to-many dengan Guru sebagai entitas utama).
+Setiap Mata Pelajaran memiliki banyak Soal (one-to-many dengan Mata Pelajaran sebagai entitas utama).
+Setiap Soal memiliki banyak Jawaban (one-to-many dengan Soal sebagai entitas utama).
+Setiap Kelas memiliki banyak Siswa (one-to-many dengan Kelas sebagai entitas utama).
+Setiap Jurusan memiliki banyak Siswa (one-to-many dengan Jurusan sebagai entitas utama).
+Setiap Siswa memiliki banyak Absensi Siswa (one-to-many dengan Siswa sebagai entitas utama).
+Setiap Guru memiliki banyak Absensi Guru (one-to-many dengan Guru sebagai entitas utama).
+
+```
+
+## Urutan Mmebuta Migration
+
+```bash
+1. Jenjang
+2. Jurusan
+3. Mata Pelajaran
+4. Kelas
+5. Guru
+6. E-Learning
+7. Soal
+8. Jawaban
+9. Siswa
+10. Nilai
+11. Raport
+12. Absensi Guru
+13. Absensi Siswa
+```
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
