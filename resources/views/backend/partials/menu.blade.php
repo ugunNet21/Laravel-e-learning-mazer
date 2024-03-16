@@ -60,6 +60,9 @@
                             <li class="submenu-item {{ request()->routeIs('jenjang.index') ? 'active' : '' }} ">
                                 <a href="{{route('jenjang.index')}}" class="submenu-link">Jenjang</a>
                             </li>
+                            <li class="submenu-item {{ request()->routeIs('jurusan.index') ? 'active' : '' }} ">
+                                <a href="{{route('jurusan.index')}}" class="submenu-link">Jurusan</a>
+                            </li>
                         </ul>
                     </li>
 
