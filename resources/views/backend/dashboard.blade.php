@@ -19,8 +19,7 @@
                             <div class="card">
                                 <div class="card-body px-4 py-4-5">
                                     <div class="row">
-                                        <div
-                                            class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                        <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
                                             <div class="stats-icon purple mb-2">
                                                 <i class="iconly-boldShow"></i>
                                             </div>
@@ -37,8 +36,7 @@
                             <div class="card">
                                 <div class="card-body px-4 py-4-5">
                                     <div class="row">
-                                        <div
-                                            class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                        <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
                                             <div class="stats-icon blue mb-2">
                                                 <i class="iconly-boldProfile"></i>
                                             </div>
@@ -55,8 +53,7 @@
                             <div class="card">
                                 <div class="card-body px-4 py-4-5">
                                     <div class="row">
-                                        <div
-                                            class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                        <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
                                             <div class="stats-icon green mb-2">
                                                 <i class="iconly-boldAdd-User"></i>
                                             </div>
@@ -73,8 +70,7 @@
                             <div class="card">
                                 <div class="card-body px-4 py-4-5">
                                     <div class="row">
-                                        <div
-                                            class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                        <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
                                             <div class="stats-icon red mb-2">
                                                 <i class="iconly-boldBookmark"></i>
                                             </div>
@@ -110,8 +106,8 @@
                                     <div class="row">
                                         <div class="col-7">
                                             <div class="d-flex align-items-center">
-                                                <svg class="bi text-primary" width="32" height="32"
-                                                    fill="blue" style="width:10px">
+                                                <svg class="bi text-primary" width="32" height="32" fill="blue"
+                                                    style="width:10px">
                                                     <use
                                                         xlink:href="{{ asset('backend/assets/static/images/bootstrap-icons.svg#circle-fill') }}" />
                                                 </svg>
@@ -128,8 +124,8 @@
                                     <div class="row">
                                         <div class="col-7">
                                             <div class="d-flex align-items-center">
-                                                <svg class="bi text-success" width="32" height="32"
-                                                    fill="blue" style="width:10px">
+                                                <svg class="bi text-success" width="32" height="32" fill="blue"
+                                                    style="width:10px">
                                                     <use
                                                         xlink:href="{{ asset('backend/assets/static/images/bootstrap-icons.svg#circle-fill') }}" />
                                                 </svg>
@@ -225,8 +221,14 @@
                                     <img src="{{ asset('backend/assets/compiled/jpg/1.jpg') }}" alt="Face 1">
                                 </div>
                                 <div class="ms-3 name">
-                                    <h5 class="font-bold">John Profile</h5>
-                                    <h6 class="text-muted mb-0">@johnducky</h6>
+                                    <h5 class="font-bold">Profile</h5>
+                                    <h6 class="text-muted mb-0">
+                                        @if ($user_role === 'admin')
+                                            Admin
+                                        @else
+                                            Guest
+                                        @endif
+                                    </h6>
                                 </div>
                             </div>
                             <a href="/logouts" class="btn btn-danger mt-3">Logout</a>

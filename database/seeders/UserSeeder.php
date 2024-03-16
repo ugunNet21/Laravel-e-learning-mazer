@@ -15,7 +15,7 @@ class UserSeeder extends Seeder
             'name' => 'Admin',
             'username' => 'admin',
             'email' => 'info@belajar.com',
-            'role' => 'Admin',
+            'role' => 'admin',
             'status' => 'Aktif',
             'password' => bcrypt('Bismillah'),
         ];
