@@ -136,7 +136,7 @@ Setiap Guru memiliki banyak Absensi Guru (one-to-many dengan Guru sebagai entita
 
 ```
 
-## Urutan Mmebuta Migration
+## Urutan Membuat Migration
 
 ```bash
 1. Jenjang
