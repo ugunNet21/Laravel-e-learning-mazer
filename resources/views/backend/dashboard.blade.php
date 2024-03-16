@@ -225,10 +225,11 @@
                                     <img src="{{ asset('backend/assets/compiled/jpg/1.jpg') }}" alt="Face 1">
                                 </div>
                                 <div class="ms-3 name">
-                                    <h5 class="font-bold">John Duck</h5>
+                                    <h5 class="font-bold">John Profile</h5>
                                     <h6 class="text-muted mb-0">@johnducky</h6>
                                 </div>
                             </div>
+                            <a href="/logout" class="btn btn-danger mt-3">Logout</a>
                         </div>
                     </div>
                     <div class="card">

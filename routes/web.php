@@ -7,7 +7,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/home', [DashboardController::class, 'index'])->name('home');
+Route::get('logout', function () {
+    auth()->logout();
+    Session()->flush();
+
+    return Redirect::to('/');
+})->name('logout');
 
 Auth::routes();
-
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
