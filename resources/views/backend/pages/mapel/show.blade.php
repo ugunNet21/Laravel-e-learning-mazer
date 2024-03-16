@@ -1,7 +1,7 @@
 <!-- resources/views/mapel/show.blade.php -->
 
 @extends('backend.layouts.app')
-
+@section('title', 'Detail mata pelajaran')
 @section('content')
     <div id="main">
         <header class="mb-3">

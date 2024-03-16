@@ -66,6 +66,9 @@
                             <li class="submenu-item {{ request()->routeIs('mapel.index') ? 'active' : '' }} ">
                                 <a href="{{route('mapel.index')}}" class="submenu-link">Mata Pelajaran</a>
                             </li>
+                            <li class="submenu-item {{ request()->routeIs('kelas_admin.index') ? 'active' : '' }} ">
+                                <a href="{{route('kelas_admin.index')}}" class="submenu-link">Kelas</a>
+                            </li>
                         </ul>
                     </li>
 

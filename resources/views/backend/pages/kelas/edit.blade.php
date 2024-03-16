@@ -1,7 +1,7 @@
-<!-- resources/views/backend/mapel/edit.blade.php -->
+<!-- resources/views/kelas/edit.blade.php -->
 
 @extends('backend.layouts.app')
-@section('title', 'Edit mata pelajaran')
+@section('title', 'Edit Kelas')
 @section('content')
     <div id="main">
         <header class="mb-3">
@@ -11,38 +11,37 @@
         </header>
 
         <div class="page-heading">
-            <h3>Edit Pelajaran</h3>
+            <h3>Edit Kelas</h3>
         </div>
 
         <div class="page-content">
             <div class="row">
                 <div class="col-12">
                     <div class="card">
-                        <div class="card-header">Edit Mata Pelajaran</div>
+                        <div class="card-header">Edit Kelas</div>
 
                         <div class="card-body">
-                            <form method="POST" action="{{ route('mapel.update', $mapel) }}">
+                            <form method="POST" action="{{ route('kelas_admin.update', $kelas_admin) }}">
                                 @csrf
                                 @method('PUT')
 
                                 <div class="form-group">
-                                    <label for="nama">Nama Mata Pelajaran</label>
+                                    <label for="nama">Nama Kelas</label>
                                     <input type="text" class="form-control" id="nama" name="nama"
-                                        value="{{ old('nama', $mapel->nama) }}" required>
+                                        value="{{ old('nama', $kelas_admin->nama) }}" required>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="deskripsi">Deskripsi</label>
-                                    <textarea class="form-control" id="deskripsi" name="deskripsi" rows="3">{{ old('deskripsi', $mapel->deskripsi) }}</textarea>
+                                    <label for="tingkat">Tingkat</label>
+                                    <input type="number" class="form-control" id="tingkat" name="tingkat"
+                                        value="{{ old('tingkat', $kelas_admin->tingkat) }}" required>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="status">Status</label>
-                                    <select class="form-control" id="status" name="status" required>
-                                        <option value="Aktif" {{ $mapel->status == 'Aktif' ? 'selected' : '' }}>
-                                            Aktif</option>
-                                        <option value="Nonaktif"
-                                            {{ $mapel->status == 'Nonaktif' ? 'selected' : '' }}>Nonaktif</option>
+                                    <label for="jenjang">Jenjang</label>
+                                    <select class="form-control" id="jenjang" name="jenjang" required>
+                                        <option value="SMP" {{ $kelas_admin->jenjang == 'SMP' ? 'selected' : '' }}>SMP</option>
+                                        <option value="SMA" {{ $kelas_admin->jenjang == 'SMA' ? 'selected' : '' }}>SMA</option>
                                     </select>
                                 </div>
 
