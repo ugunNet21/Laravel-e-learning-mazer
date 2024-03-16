@@ -7,6 +7,15 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+<h1>Laravel 11 | E-Learning</h1>
+
+## Screenshoot
+
+<p>Dashboard Admin</p>
+
+![image](https://github.com/ugunNet21/Laravel-e-learning-mazer/assets/45864165/44b3959d-93d0-49e0-b1f8-51219376497d)
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
