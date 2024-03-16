@@ -225,6 +225,14 @@
                                     <h6 class="text-muted mb-0">
                                         @if ($user_role === 'admin')
                                             Admin
+                                        @elseif($user_role === 'Super Admin')
+                                            Super Admin
+                                        @elseif($user_role === 'Murid')
+                                            Siswa
+                                        @elseif($user_role === 'Kepala Sekolah')
+                                            Kepala Sekolah
+                                        @elseif($user_role === 'Guru')
+                                            Guru
                                         @else
                                             Guest
                                         @endif
