@@ -50,7 +50,7 @@
                         <span>Dashboard</span>
                     </a>
                 </li>
-                @if (auth()->user()->role === 'admin')
+                @if (auth()->user()->role === 'admin'  || auth()->user()->role == 'Super Admin')
                     <li class="sidebar-item  has-sub">
                         <a href="#" class='sidebar-link'>
                             <i class="bi bi-stack"></i>
