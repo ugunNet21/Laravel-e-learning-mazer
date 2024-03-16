@@ -69,6 +69,9 @@
                             <li class="submenu-item {{ request()->routeIs('kelas_admin.index') ? 'active' : '' }} ">
                                 <a href="{{route('kelas_admin.index')}}" class="submenu-link">Kelas</a>
                             </li>
+                            <li class="submenu-item {{ request()->routeIs('guru.index') ? 'active' : '' }} ">
+                                <a href="{{route('guru.index')}}" class="submenu-link">Guru</a>
+                            </li>
                         </ul>
                     </li>
 
