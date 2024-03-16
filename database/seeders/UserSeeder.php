@@ -56,13 +56,13 @@ class UserSeeder extends Seeder
         $userData = [
             'name' => 'Murid',
             'username' => 'Murid',
-            'email' => 'Murid@belajar.com',
+            'email' => 'murid@belajar.com',
             'role' => 'Murid',
             'status' => 'Aktif',
             'password' => bcrypt('Bismillah'),
         ];
 
-        $user = User::updateOrCreate(['email' => 'info@belajar.com'], $userData);
+        $user = User::updateOrCreate(['email' => 'murid@belajar.com'], $userData);
 
         if ($user->wasRecentlyCreated) {
             $this->command->info('Data User ' . $user->name . ' has been saved.');
