@@ -229,7 +229,7 @@
                                     <h6 class="text-muted mb-0">@johnducky</h6>
                                 </div>
                             </div>
-                            <a href="/logout" class="btn btn-danger mt-3">Logout</a>
+                            <a href="/logouts" class="btn btn-danger mt-3">Logout</a>
                         </div>
                     </div>
                     <div class="card">
