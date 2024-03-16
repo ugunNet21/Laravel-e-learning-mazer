@@ -3,9 +3,10 @@
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\backend\JenjangController;
 use App\Http\Controllers\backend\JurusanController;
+use App\Http\Controllers\backend\MataPelajaranController;
 use App\Http\Controllers\DashboardController;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
@@ -17,6 +18,7 @@ Route::middleware(['auth', 'verified', 'admin'])->group(function () {
 
     Route::resource('jenjang', JenjangController::class);
     Route::resource('jurusan', JurusanController::class);
+    Route::resource('mapel', MataPelajaranController::class);
 });
 
 Auth::routes();

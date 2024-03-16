@@ -63,6 +63,9 @@
                             <li class="submenu-item {{ request()->routeIs('jurusan.index') ? 'active' : '' }} ">
                                 <a href="{{route('jurusan.index')}}" class="submenu-link">Jurusan</a>
                             </li>
+                            <li class="submenu-item {{ request()->routeIs('mapel.index') ? 'active' : '' }} ">
+                                <a href="{{route('mapel.index')}}" class="submenu-link">Mata Pelajaran</a>
+                            </li>
                         </ul>
                     </li>
 
