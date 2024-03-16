@@ -13,5 +13,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/logouts', [LoginController::class, 'logout'])->name('logouts');
 });
 
+Route::get('/dashboard', function () {
+
+})->middleware('isAdmin');
+
 
 Auth::routes();

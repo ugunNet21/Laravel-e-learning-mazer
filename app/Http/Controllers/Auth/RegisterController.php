@@ -12,6 +12,10 @@ class RegisterController extends Controller
 {
 
     use RegistersUsers;
+    public function __construct()
+    {
+        $this->middleware('guest');
+    }
 
     protected $redirectTo = '/home';
 
