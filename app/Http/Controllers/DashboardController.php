@@ -10,7 +10,8 @@ class DashboardController extends Controller
     }
     public function index()
     {
-        return view('backend.dashboard');
+        $user_role = auth()->user()->role;
+        return view('backend.dashboard')->with(compact('user_role'));
     }
 
 }

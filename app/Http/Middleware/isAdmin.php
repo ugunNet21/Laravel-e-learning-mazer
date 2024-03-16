@@ -5,14 +5,15 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
-
-class EnsureTokenIsValid
+use Illuminate\Support\Facades\Auth;
+class isAdmin
 {
 
     public function handle(Request $request, Closure $next): Response
     {
-        // if ($request->input('token') !== 'my-secret-token') {
-        //     return redirect('home');
+
+        // if (! $request->user()->hasRole($role)) {
+        //     abort(403, 'Unauthorized action.');
         // }
         return $next($request);
     }
