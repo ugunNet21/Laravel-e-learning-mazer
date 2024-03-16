@@ -45,7 +45,7 @@
                 <li class="sidebar-title">Menu</li>
 
                 <li class="sidebar-item active ">
-                    <a href="index.html" class='sidebar-link'>
+                    <a href="/home" class='sidebar-link'>
                         <i class="bi bi-grid-fill"></i>
                         <span>Dashboard</span>
                     </a>
@@ -57,12 +57,19 @@
                             <span>Components</span>
                         </a>
                         <ul class="submenu ">
-                            <li class="submenu-item  ">
-                                <a href="component-accordion.html" class="submenu-link">Accordion</a>
+                            <li class="submenu-item {{ request()->routeIs('jenjang.index') ? 'active' : '' }} ">
+                                <a href="{{route('jenjang.index')}}" class="submenu-link">Jenjang</a>
                             </li>
-
+                            <li class="submenu-item {{ request()->routeIs('jurusan.index') ? 'active' : '' }} ">
+                                <a href="{{route('jurusan.index')}}" class="submenu-link">Jurusan</a>
+                            </li>
+                            <li class="submenu-item {{ request()->routeIs('mapel.index') ? 'active' : '' }} ">
+                                <a href="{{route('mapel.index')}}" class="submenu-link">Mata Pelajaran</a>
+                            </li>
+                            <li class="submenu-item {{ request()->routeIs('kelas_admin.index') ? 'active' : '' }} ">
+                                <a href="{{route('kelas_admin.index')}}" class="submenu-link">Kelas</a>
+                            </li>
                         </ul>
-
                     </li>
 
                     <li class="sidebar-title">Pages</li>
