@@ -9,7 +9,7 @@
         </header>
 
         <div class="page-heading">
-            <h3>Profile Statistics</h3>
+            <h3>Student Statistics</h3>
         </div>
         <div class="page-content">
             <section class="row">
@@ -25,7 +25,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
-                                            <h6 class="text-muted font-semibold">Profile Views</h6>
+                                            <h6 class="text-muted font-semibold">Courses Enrolled</h6>
                                             <h6 class="font-extrabold mb-0">112.000</h6>
                                         </div>
                                     </div>
@@ -42,7 +42,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
-                                            <h6 class="text-muted font-semibold">Followers</h6>
+                                            <h6 class="text-muted font-semibold">Active Learners</h6>
                                             <h6 class="font-extrabold mb-0">183.000</h6>
                                         </div>
                                     </div>
@@ -59,7 +59,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
-                                            <h6 class="text-muted font-semibold">Following</h6>
+                                            <h6 class="text-muted font-semibold">Study Hours</h6>
                                             <h6 class="font-extrabold mb-0">80.000</h6>
                                         </div>
                                     </div>
@@ -76,7 +76,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
-                                            <h6 class="text-muted font-semibold">Saved Post</h6>
+                                            <h6 class="text-muted font-semibold">Discussions</h6>
                                             <h6 class="font-extrabold mb-0">112</h6>
                                         </div>
                                     </div>
@@ -88,7 +88,7 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4>Profile Visit</h4>
+                                    <h4>Courses Progress</h4>
                                 </div>
                                 <div class="card-body">
                                     <div id="chart-profile-visit"></div>
@@ -100,7 +100,7 @@
                         <div class="col-12 col-xl-4">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4>Profile Visit</h4>
+                                    <h4>Level</h4>
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
@@ -111,7 +111,7 @@
                                                     <use
                                                         xlink:href="{{ asset('backend/assets/static/images/bootstrap-icons.svg#circle-fill') }}" />
                                                 </svg>
-                                                <h5 class="mb-0 ms-3">Europe</h5>
+                                                <h5 class="mb-0 ms-3">SMP</h5>
                                             </div>
                                         </div>
                                         <div class="col-5">
@@ -129,7 +129,7 @@
                                                     <use
                                                         xlink:href="{{ asset('backend/assets/static/images/bootstrap-icons.svg#circle-fill') }}" />
                                                 </svg>
-                                                <h5 class="mb-0 ms-3">America</h5>
+                                                <h5 class="mb-0 ms-3">SMA</h5>
                                             </div>
                                         </div>
                                         <div class="col-5">
@@ -147,7 +147,7 @@
                                                     <use
                                                         xlink:href="{{ asset('backend/assets/static/images/bootstrap-icons.svg#circle-fill') }}" />
                                                 </svg>
-                                                <h5 class="mb-0 ms-3">Indonesia</h5>
+                                                <h5 class="mb-0 ms-3">Extra curricular</h5>
                                             </div>
                                         </div>
                                         <div class="col-5">
