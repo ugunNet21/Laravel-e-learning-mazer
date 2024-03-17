@@ -26,6 +26,7 @@
                             <table class="table">
                                 <thead>
                                     <tr>
+                                        <th>#</th>
                                         <th scope="col">Judul</th>
                                         <th scope="col">Deskripsi</th>
                                         <th scope="col">Tautan</th>
@@ -36,6 +37,7 @@
                                 <tbody>
                                     @forelse ($eLearnings as $eLearning)
                                         <tr>
+                                            <td>{{ $loop->iteration }}</td>
                                             <td>{{ $eLearning->judul }}</td>
                                             <td>{{ $eLearning->deskripsi }}</td>
                                             <td>{{ $eLearning->tautan }}</td>

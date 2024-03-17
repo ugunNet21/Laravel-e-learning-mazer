@@ -32,6 +32,7 @@
                                     <table class="table table-striped">
                                         <thead>
                                             <tr>
+                                                <th>#</th>
                                                 <th scope="col">Nama</th>
                                                 <th scope="col">Status</th>
                                                 <th scope="col">Aksi</th>
@@ -40,6 +41,7 @@
                                         <tbody>
                                             @foreach ($jurusans as $jurusan)
                                                 <tr>
+                                                    <td>{{$loop->iteration}}</td>
                                                     <td>{{ $jurusan->nama }}</td>
                                                     <td>{{ $jurusan->status }}</td>
                                                     <td>
