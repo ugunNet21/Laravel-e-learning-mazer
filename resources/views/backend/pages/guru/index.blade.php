@@ -26,6 +26,7 @@
                             <table class="table">
                                 <thead>
                                     <tr>
+                                        <th>#</th>
                                         <th scope="col">Nama</th>
                                         <th scope="col">Mata Pelajaran</th>
                                         <th scope="col">Jenjang</th>
@@ -35,6 +36,7 @@
                                 <tbody>
                                     @forelse ($gurus as $guru)
                                         <tr>
+                                            <td>{{ $loop->iteration}}</td>
                                             <td>{{ $guru->nama }}</td>
                                             <td>{{ $guru->mata_pelajaran }}</td>
                                             <td>{{ $guru->jenjang }}</td>

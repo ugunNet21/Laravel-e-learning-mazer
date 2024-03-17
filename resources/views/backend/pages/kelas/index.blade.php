@@ -11,7 +11,7 @@
         </header>
 
         <div class="page-heading">
-            <h3>Jenjang</h3>
+            <h3>Daftar Kelas</h3>
         </div>
 
         <div class="page-content">
@@ -30,6 +30,7 @@
                                     <table class="table table-striped">
                                         <thead>
                                             <tr>
+                                                <th>#</th>
                                                 <th scope="col">Nama</th>
                                                 <th scope="col">Tingkat</th>
                                                 <th scope="col">Jenjang</th>
@@ -39,6 +40,7 @@
                                         <tbody>
                                             @foreach ($kelas_admin as $kelasItem)
                                                 <tr>
+                                                    <td>{{ $loop->iteration }}</td>
                                                     <td>{{ $kelasItem->nama }}</td>
                                                     <td>{{ $kelasItem->tingkat }}</td>
                                                     <td>{{ $kelasItem->jenjang }}</td>

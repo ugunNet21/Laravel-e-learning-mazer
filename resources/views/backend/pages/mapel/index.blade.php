@@ -30,6 +30,7 @@
                                     <table class="table table-striped">
                                         <thead>
                                             <tr>
+                                                <th>#</th>
                                                 <th scope="col">Nama</th>
                                                 <th scope="col">Deskripsi</th>
                                                 <th scope="col">Status</th>
@@ -39,6 +40,7 @@
                                         <tbody>
                                             @foreach ($mataPelajarans as $mataPelajaran)
                                                 <tr>
+                                                    <td>{{ $loop->iteration }}</td>
                                                     <td>{{ $mataPelajaran->nama }}</td>
                                                     <td>{{ $mataPelajaran->deskripsi }}</td>
                                                     <td>{{ $mataPelajaran->status }}</td>
