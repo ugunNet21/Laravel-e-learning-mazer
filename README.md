@@ -154,6 +154,18 @@ Setiap Guru memiliki banyak Absensi Guru (one-to-many dengan Guru sebagai entita
 13. Absensi Siswa
 ```
 
+## Install ation & Configuration
+
+```bash
+composer install
+composer update
+npm install
+npm run dev 
+npm run build
+composer require spatie/laravel-permission
+php artisan migrate --seed
+```
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
