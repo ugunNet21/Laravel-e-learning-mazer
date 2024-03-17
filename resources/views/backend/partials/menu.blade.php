@@ -87,6 +87,9 @@
                             <li class="submenu-item {{ request()->routeIs('nilai.index') ? 'active' : '' }} ">
                                 <a href="{{route('nilai.index')}}" class="submenu-link">Nilai</a>
                             </li>
+                            <li class="submenu-item {{ request()->routeIs('raports.index') ? 'active' : '' }} ">
+                                <a href="{{route('raports.index')}}" class="submenu-link">Raport</a>
+                            </li>
                         </ul>
                     </li>
 
