@@ -8,6 +8,7 @@ use App\Http\Controllers\backend\JenjangController;
 use App\Http\Controllers\backend\JurusanController;
 use App\Http\Controllers\backend\KelasController;
 use App\Http\Controllers\backend\MataPelajaranController;
+use App\Http\Controllers\backend\NilaiController;
 use App\Http\Controllers\backend\SiswaController;
 use App\Http\Controllers\backend\SoalController;
 use App\Http\Controllers\DashboardController;
@@ -31,6 +32,7 @@ Route::middleware(['auth', 'verified', 'admin'])->group(function () {
     Route::resource('soal', SoalController::class);
     Route::resource('jawaban', JawabanController::class);
     Route::resource('siswa', SiswaController::class);
+    Route::resource('nilai', NilaiController::class);
 });
 
 Auth::routes();
