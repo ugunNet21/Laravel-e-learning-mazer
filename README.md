@@ -13,7 +13,19 @@
 
 <p>Dashboard Admin</p>
 
+![image](https://github.com/ugunNet21/Laravel-e-learning-mazer/assets/45864165/d3fe6d91-6348-4d37-98f7-98e46af9ee8f)
+
+
 ![image](https://github.com/ugunNet21/Laravel-e-learning-mazer/assets/45864165/44b3959d-93d0-49e0-b1f8-51219376497d)
+
+<p>Halaman Soal</p>
+
+![image](https://github.com/ugunNet21/Laravel-e-learning-mazer/assets/45864165/5380f2ad-6de8-4258-ad11-9f761deac83f)
+
+
+<p>Daftar Raport</p>
+
+![image](https://github.com/ugunNet21/Laravel-e-learning-mazer/assets/45864165/a36bd1e0-79c5-4bcb-be0c-21de373c2baf)
 
 
 ## Skema Tabel dan Relasi
