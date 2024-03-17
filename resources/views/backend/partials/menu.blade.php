@@ -72,6 +72,9 @@
                             <li class="submenu-item {{ request()->routeIs('guru.index') ? 'active' : '' }} ">
                                 <a href="{{route('guru.index')}}" class="submenu-link">Guru</a>
                             </li>
+                            <li class="submenu-item {{ request()->routeIs('e_learning.index') ? 'active' : '' }} ">
+                                <a href="{{route('e_learning.index')}}" class="submenu-link">E Learning</a>
+                            </li>
                         </ul>
                     </li>
 

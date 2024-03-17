@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\backend\ELearningController;
 use App\Http\Controllers\backend\GuruController;
 use App\Http\Controllers\backend\JenjangController;
 use App\Http\Controllers\backend\JurusanController;
@@ -23,6 +24,7 @@ Route::middleware(['auth', 'verified', 'admin'])->group(function () {
     Route::resource('mapel', MataPelajaranController::class);
     Route::resource('kelas_admin', KelasController::class);
     Route::resource('guru', GuruController::class);
+    Route::resource('e_learning', ELearningController::class);
 });
 
 Auth::routes();
