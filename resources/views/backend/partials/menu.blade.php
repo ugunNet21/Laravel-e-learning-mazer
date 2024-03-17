@@ -78,6 +78,9 @@
                             <li class="submenu-item {{ request()->routeIs('soal.index') ? 'active' : '' }} ">
                                 <a href="{{route('soal.index')}}" class="submenu-link">Soal</a>
                             </li>
+                            <li class="submenu-item {{ request()->routeIs('jawaban.index') ? 'active' : '' }} ">
+                                <a href="{{route('jawaban.index')}}" class="submenu-link">Jawaban</a>
+                            </li>
                         </ul>
                     </li>
 

@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\backend\ELearningController;
 use App\Http\Controllers\backend\GuruController;
+use App\Http\Controllers\backend\JawabanController;
 use App\Http\Controllers\backend\JenjangController;
 use App\Http\Controllers\backend\JurusanController;
 use App\Http\Controllers\backend\KelasController;
@@ -27,6 +28,7 @@ Route::middleware(['auth', 'verified', 'admin'])->group(function () {
     Route::resource('guru', GuruController::class);
     Route::resource('e_learning', ELearningController::class);
     Route::resource('soal', SoalController::class);
+    Route::resource('jawaban', JawabanController::class);
 });
 
 Auth::routes();
