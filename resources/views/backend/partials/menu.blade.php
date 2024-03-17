@@ -44,7 +44,7 @@
             <ul class="menu">
                 <li class="sidebar-title">Menu</li>
 
-                <li class="sidebar-item active ">
+                <li class="sidebar-item {{ request()->routeIs('home') ? 'active' : '' }} ">
                     <a href="/home" class='sidebar-link'>
                         <i class="bi bi-grid-fill"></i>
                         <span>Dashboard</span>
@@ -54,7 +54,7 @@
                     <li class="sidebar-item  has-sub">
                         <a href="#" class='sidebar-link'>
                             <i class="bi bi-stack"></i>
-                            <span>Components</span>
+                            <span>Input Data</span>
                         </a>
                         <ul class="submenu ">
                             <li class="submenu-item {{ request()->routeIs('jenjang.index') ? 'active' : '' }} ">
