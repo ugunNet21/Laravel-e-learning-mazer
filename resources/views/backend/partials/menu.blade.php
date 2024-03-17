@@ -75,6 +75,24 @@
                             <li class="submenu-item {{ request()->routeIs('e_learning.index') ? 'active' : '' }} ">
                                 <a href="{{route('e_learning.index')}}" class="submenu-link">E Learning</a>
                             </li>
+                            <li class="submenu-item {{ request()->routeIs('soal.index') ? 'active' : '' }} ">
+                                <a href="{{route('soal.index')}}" class="submenu-link">Soal</a>
+                            </li>
+                            <li class="submenu-item {{ request()->routeIs('jawaban.index') ? 'active' : '' }} ">
+                                <a href="{{route('jawaban.index')}}" class="submenu-link">Jawaban</a>
+                            </li>
+                            <li class="submenu-item {{ request()->routeIs('siswa.index') ? 'active' : '' }} ">
+                                <a href="{{route('siswa.index')}}" class="submenu-link">Siswa</a>
+                            </li>
+                            <li class="submenu-item {{ request()->routeIs('nilai.index') ? 'active' : '' }} ">
+                                <a href="{{route('nilai.index')}}" class="submenu-link">Nilai</a>
+                            </li>
+                            <li class="submenu-item {{ request()->routeIs('raports.index') ? 'active' : '' }} ">
+                                <a href="{{route('raports.index')}}" class="submenu-link">Raport</a>
+                            </li>
+                            <li class="submenu-item {{ request()->routeIs('absensi-guru.index') ? 'active' : '' }} ">
+                                <a href="{{route('absensi-guru.index')}}" class="submenu-link">Absensi Guru</a>
+                            </li>
                         </ul>
                     </li>
 
