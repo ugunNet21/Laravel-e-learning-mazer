@@ -93,6 +93,9 @@
                             <li class="submenu-item {{ request()->routeIs('absensi-guru.index') ? 'active' : '' }} ">
                                 <a href="{{route('absensi-guru.index')}}" class="submenu-link">Absensi Guru</a>
                             </li>
+                            <li class="submenu-item {{ request()->routeIs('absensi_siswa.index') ? 'active' : '' }} ">
+                                <a href="{{route('absensi_siswa.index')}}" class="submenu-link">Absensi Siswa</a>
+                            </li>
                         </ul>
                     </li>
 

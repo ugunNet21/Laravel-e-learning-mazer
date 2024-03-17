@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\backend\AbsensiGuruController;
+use App\Http\Controllers\backend\AbsensiSiswaController;
 use App\Http\Controllers\backend\ELearningController;
 use App\Http\Controllers\backend\GuruController;
 use App\Http\Controllers\backend\JawabanController;
@@ -37,6 +38,7 @@ Route::middleware(['auth', 'verified', 'admin'])->group(function () {
     Route::resource('nilai', NilaiController::class);
     Route::resource('raports', RaportController::class);
     Route::resource('absensi-guru', AbsensiGuruController::class);
+    Route::resource('absensi_siswa', AbsensiSiswaController::class);
 });
 
 Auth::routes();
