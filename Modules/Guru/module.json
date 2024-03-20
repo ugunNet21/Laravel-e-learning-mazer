@@ -1,0 +1,11 @@
+{
+    "name": "Guru",
+    "alias": "guru",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Guru\\App\\Providers\\GuruServiceProvider"
+    ],
+    "files": []
+}
