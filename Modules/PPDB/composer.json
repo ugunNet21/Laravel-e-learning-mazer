@@ -1,0 +1,31 @@
+{
+    "name": "nwidart/ppdb",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\PPDB\\": "",
+            "Modules\\PPDB\\App\\": "app/",
+            "Modules\\PPDB\\Database\\Factories\\": "database/factories/",
+            "Modules\\PPDB\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\PPDB\\Tests\\": "tests/"
+        }
+    }
+}
