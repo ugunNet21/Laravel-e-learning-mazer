@@ -10,6 +10,10 @@
 <h1>Laravel 11 | E-Learning</h1>
 
 ## Screenshoot
+<p>Frontend</p>
+
+![image](https://github.com/ugunNet21/Laravel-e-learning-mazer/assets/45864165/509e9add-5aa5-4055-8f17-264f80c105a8)
+
 
 <p>Dashboard Admin</p>
 
