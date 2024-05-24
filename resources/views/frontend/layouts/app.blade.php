@@ -37,6 +37,10 @@
         </div>
     </div>
     @yield('content')
+     <!--- #BACK TO TOP-->
+     <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+        <ion-icon name="arrow-up"></ion-icon>
+    </a>
     <!--#FOOTER-->
     <footer class="footer">
         @include('frontend.partials.footer')

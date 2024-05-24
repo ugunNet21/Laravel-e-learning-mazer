@@ -1,5 +1,8 @@
- <!-- #EVENT-->
- <section class="section event" id="event" aria-label="event">
+@extends('frontend.layouts.app')
+@section('title','Event')
+@section('content')
+     <!-- #EVENT-->
+ <section class="section event" id="event" aria-label="event" style="margin-top: 10%;">
     <div class="container">
 
         <p class="section-subtitle">Upcomming Event</p>
@@ -117,3 +120,5 @@
 
     </div>
 </section>
+
+@endsection

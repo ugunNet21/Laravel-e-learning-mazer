@@ -1,94 +1,100 @@
-<!-- #ABOUT-->
-<section class="section about" id="about" aria-label="about">
-    <div class="container">
+@extends('frontend.layouts.app')
 
-        <figure class="about-banner">
+@section('title', 'About')
 
-            <img src="{{ asset('frontend/assets/images/about-banner.jpg') }}" width="450" height="590"
-                loading="lazy" alt="about banner" class="w-100 about-img">
+@section('content')
+    <!-- #ABOUT-->
+    <section class="section about" id="about" aria-label="about" style="margin-top: 20%;">
+        <div class="container">
 
-            <img src="{{ asset('frontend/assets/images/about-abs-1.jpg') }}" width="188" height="242"
-                loading="lazy" aria-hidden="true" class="abs-img abs-img-1">
+            <figure class="about-banner">
 
-            <img src="{{ asset('frontend/assets/images/about-abs-2.jpg') }}" width="150" height="200"
-                loading="lazy" aria-hidden="true" class="abs-img abs-img-2">
+                <img src="{{ asset('frontend/assets/images/about-banner.jpg') }}" width="450" height="590" loading="lazy"
+                    alt="about banner" class="w-100 about-img">
 
-        </figure>
+                <img src="{{ asset('frontend/assets/images/about-abs-1.jpg') }}" width="188" height="242"
+                    loading="lazy" aria-hidden="true" class="abs-img abs-img-1">
 
-        <div class="about-content">
+                <img src="{{ asset('frontend/assets/images/about-abs-2.jpg') }}" width="150" height="200"
+                    loading="lazy" aria-hidden="true" class="abs-img abs-img-2">
 
-            <p class="section-subtitle">Who We Are</p>
+            </figure>
 
-            <h2 class="h2 section-title">We Offer The Best Carrier</h2>
+            <div class="about-content">
 
-            <ul class="about-list">
+                <p class="section-subtitle">Who We Are</p>
 
-                <li class="about-item">
+                <h2 class="h2 section-title">We Offer The Best Carrier</h2>
 
-                    <div class="item-icon item-icon-1">
-                        <img src="{{ asset('frontend/assets/images/about-icon-1.png') }}" width="30"
-                            height="30" loading="lazy" aria-hidden="true">
-                    </div>
+                <ul class="about-list">
 
-                    <div>
-                        <h3 class="h3 item-title">Industry Expert Instructor</h3>
+                    <li class="about-item">
 
-                        <p class="item-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmoded tempor
-                            incididunt dolore magna
-                            aliqua.
-                        </p>
-                    </div>
+                        <div class="item-icon item-icon-1">
+                            <img src="{{ asset('frontend/assets/images/about-icon-1.png') }}" width="30" height="30"
+                                loading="lazy" aria-hidden="true">
+                        </div>
 
-                </li>
+                        <div>
+                            <h3 class="h3 item-title">Industry Expert Instructor</h3>
 
-                <li class="about-item">
+                            <p class="item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmoded tempor
+                                incididunt dolore magna
+                                aliqua.
+                            </p>
+                        </div>
 
-                    <div class="item-icon item-icon-2">
-                        <img src="{{ asset('frontend/assets/images/about-icon-2.png') }}" width="30"
-                            height="30" loading="lazy" aria-hidden="true">
-                    </div>
+                    </li>
 
-                    <div>
-                        <h3 class="h3 item-title">Up-to-Date Course Content</h3>
+                    <li class="about-item">
 
-                        <p class="item-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmoded tempor
-                            incididunt dolore magna
-                            aliqua.
-                        </p>
-                    </div>
+                        <div class="item-icon item-icon-2">
+                            <img src="{{ asset('frontend/assets/images/about-icon-2.png') }}" width="30" height="30"
+                                loading="lazy" aria-hidden="true">
+                        </div>
 
-                </li>
+                        <div>
+                            <h3 class="h3 item-title">Up-to-Date Course Content</h3>
 
-                <li class="about-item">
+                            <p class="item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmoded tempor
+                                incididunt dolore magna
+                                aliqua.
+                            </p>
+                        </div>
 
-                    <div class="item-icon item-icon-3">
-                        <img src="{{ asset('frontend/assets/images/about-icon-3.png') }}" width="30"
-                            height="30" loading="lazy" aria-hidden="true">
-                    </div>
+                    </li>
 
-                    <div>
-                        <h3 class="h3 item-title">Biggest Student Community</h3>
+                    <li class="about-item">
 
-                        <p class="item-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmoded tempor
-                            incididunt dolore magna
-                            aliqua.
-                        </p>
-                    </div>
+                        <div class="item-icon item-icon-3">
+                            <img src="{{ asset('frontend/assets/images/about-icon-3.png') }}" width="30" height="30"
+                                loading="lazy" aria-hidden="true">
+                        </div>
 
-                </li>
+                        <div>
+                            <h3 class="h3 item-title">Biggest Student Community</h3>
 
-            </ul>
+                            <p class="item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmoded tempor
+                                incididunt dolore magna
+                                aliqua.
+                            </p>
+                        </div>
 
-            <a href="#" class="btn btn-primary">
-                <span class="span">Know About Us</span>
+                    </li>
 
-                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-            </a>
+                </ul>
+
+                <a href="#" class="btn btn-primary">
+                    <span class="span">Know About Us</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+            </div>
 
         </div>
-
-    </div>
-</section>
+    </section>
+@endsection
