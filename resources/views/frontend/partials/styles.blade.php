@@ -51,4 +51,52 @@
         display: block;
     }
     /* end */
+
+    /* Breadcrumbs Style */
+    .breadcrumbs {
+        background-color: #f9f9f9;
+        padding: 15px 0;
+        border-bottom: 1px solid #e1e1e1;
+    }
+
+    .breadcrumbs .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .breadcrumbs ol {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    .breadcrumbs ol li {
+        display: inline-block;
+        font-size: 14px;
+        color: #333;
+    }
+
+    .breadcrumbs ol li+li:before {
+        content: ">";
+        padding: 0 10px;
+        color: #999;
+    }
+
+    .breadcrumbs ol li a {
+        text-decoration: none;
+        color: #0275d8;
+    }
+
+    .breadcrumbs ol li a:hover {
+        color: #01447e;
+    }
+
+    .breadcrumbs h2 {
+        font-size: 24px;
+        margin: 0;
+        color: #333;
+    }
+    /* end breadcrumbs */
 </style>

@@ -10,3 +10,6 @@
         </ol>
     </div>
 </nav>
+{{-- @section('breadcrumb')
+    <li class="breadcrumb-item active" aria-current="page">Blog</li>
+@endsection --}}

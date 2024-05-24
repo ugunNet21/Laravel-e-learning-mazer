@@ -1,11 +1,20 @@
 @extends('frontend.layouts.app')
 
 @section('title', 'Blog')
-@section('breadcrumb')
-    <li class="breadcrumb-item active" aria-current="page">Blog</li>
-@endsection
-
 @section('content')
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs" style="margin-top: 5%;">
+        <div class="container">
+            <ol>
+                <li><a href="/">Home</a></li>
+                {{-- <li><a href="#">Blog</a></li> --}}
+                <li>Post</li>
+                {{-- {{ $item->title }} --}}
+            </ol>
+            {{-- <h2>Post</h2> --}}
+            {{-- {{ $item->title }} --}}
+        </div>
+    </section><!-- End Breadcrumbs -->
     <div class="page-content">
         <div class="container">
             <div class="row">
@@ -15,16 +24,16 @@
                             <h2 class="h2 section-title">Our Latest Blog Posts</h2>
                             <div class="row">
                                 {{-- @foreach ($posts as $post) --}}
-                                    <div class="col-md-6">
-                                        <div class="card mb-4">
-                                            <img src="" class="card-img-top" alt="">
-                                            <div class="card-body">
-                                                <h3 class="card-title"></h3>
-                                                <p class="card-text"></p>
-                                                <a href="" class="btn btn-primary">Read More</a>
-                                            </div>
+                                <div class="col-md-6">
+                                    <div class="card mb-4">
+                                        <img src="" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            <h3 class="card-title"></h3>
+                                            <p class="card-text"></p>
+                                            <a href="" class="btn btn-primary">Read More</a>
                                         </div>
                                     </div>
+                                </div>
                                 {{-- @endforeach --}}
                             </div>
                             <div class="pagination">
