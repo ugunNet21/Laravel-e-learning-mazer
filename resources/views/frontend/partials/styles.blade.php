@@ -1,7 +1,4 @@
 
-<!-- favicon-->
-<link rel="shortcut icon" href="{{ asset('frontend/favicon.svg') }}" type="image/svg+xml">
-
 <!--custom css link-->
 <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}">
 
