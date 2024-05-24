@@ -51,11 +51,38 @@
             <ion-icon name="search-outline"></ion-icon>
         </button>
 
-        <a href="#" class="header-action-btn login-btn">
-            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-            <span class="span">Login / Register</span>
-        </a>
+        <!-- Menampilkan tombol berdasarkan status login -->
+        @guest
+            <a href="{{ route('login') }}" class="header-action-btn login-btn">
+                <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                <span class="span">Login</span>
+            </a>
+        @else
+            <div class="dropdown">
+                <button class="header-action-btn dropdown-toggle" aria-label="User menu" data-dropdown-toggler>
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="{{ url('/home') }}" class="dropdown-item">
+                            <ion-icon name="speedometer-outline" aria-hidden="true"></ion-icon>
+                            <span class="span">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('logout') }}"
+                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                           class="dropdown-item">
+                            <ion-icon name="log-out-outline" aria-hidden="true"></ion-icon>
+                            <span class="span">Logout</span>
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        @endguest
 
         <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
             <ion-icon name="menu-outline"></ion-icon>
