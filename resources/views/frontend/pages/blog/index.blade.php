@@ -3,7 +3,7 @@
 @section('title', 'Blog')
 @section('content')
     <!-- ======= Breadcrumbs ======= -->
-    <section class="breadcrumbs" style="margin-top: 5%;">
+    <section class="breadcrumbs" style="margin-top: 8%;">
         <div class="container">
             <ol>
                 <li><a href="/">Home</a></li>

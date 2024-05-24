@@ -50,6 +50,7 @@
     .dropdown:hover .dropdown-menu {
         display: block;
     }
+
     /* end */
 
     /* Breadcrumbs Style */
@@ -61,8 +62,9 @@
 
     .breadcrumbs .container {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .breadcrumbs ol {
@@ -70,6 +72,8 @@
         margin: 0;
         list-style: none;
         display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
     }
 
     .breadcrumbs ol li {
@@ -79,7 +83,7 @@
     }
 
     .breadcrumbs ol li+li:before {
-        content: ">";
+        content: "/";
         padding: 0 10px;
         color: #999;
     }
@@ -98,5 +102,27 @@
         margin: 0;
         color: #333;
     }
+
+    @media (min-width: 768px) {
+        .breadcrumbs .container {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .breadcrumbs ol {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .breadcrumbs ol li {
+            font-size: 12px;
+        }
+
+        .breadcrumbs h2 {
+            font-size: 20px;
+        }
+    }
+
     /* end breadcrumbs */
 </style>
