@@ -20,6 +20,7 @@ use App\Http\Controllers\frontend\BlogController;
 use App\Http\Controllers\frontend\ContactController;
 use App\Http\Controllers\frontend\CourseController;
 use App\Http\Controllers\frontend\EventController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -52,6 +53,7 @@ Route::middleware(['auth', 'verified', 'admin'])->group(function () {
     Route::resource('raports', RaportController::class);
     Route::resource('absensi-guru', AbsensiGuruController::class);
     Route::resource('absensi_siswa', AbsensiSiswaController::class);
+    Route::get('get-post',[PostController::class,'getPost'])->name('get-post');
 });
 
 Auth::routes();
